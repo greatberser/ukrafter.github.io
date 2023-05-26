@@ -1,0 +1,92 @@
+@mixin container ($w, $h, $m, $p) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+}
+
+.header-test{
+    @include container(100%, 475px !important, 0 auto, 0);
+    background-image: url('/img/header-login.png') !important;
+     
+    &_container{
+        @include container(606px, 290px, 50px auto 0, 0);
+
+        p{
+            font-family: 'Forum', sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 58px;
+
+            text-align: center;
+            color: #0C0B10;
+        }
+
+        img{
+            @include container(117px, 143px, 30px 244px, 0);
+        }
+    }
+}
+
+.main{
+    .information{
+        max-width: 77%;
+        margin: 0 auto;
+        &-container{
+            @include container(538px, 281px, 0 auto, 47px 0 0);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(65px);
+            border-radius: 20px;
+            border: 1px solid #fff;
+
+
+            p{
+                font-family: 'Manrope', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 179.8%;
+                text-align: center;
+                color: #000000;
+
+                &:nth-child(2){
+                    font-family: 'Forum', sans-serif;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #0C0B10;
+                }
+            }
+
+            a{
+                @include container(278px, 55px, 39px 130px 0, 15px 39px);
+                background: #0C0B10;
+                border-radius: 74px;
+
+                font-family: 'Forum', sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                &:hover{
+                    background-color: rgb(189, 184, 184);
+                    color: #0C0B10;
+                }
+
+                &:focus{
+                    background-color: none;
+                    border: none !important;
+                }
+            }
+        }
+    }
+
+    .map{
+        @include container(77%, 565px, 64px auto, 0);
+        background-image: url('../img/map_img.png');
+    }
+}

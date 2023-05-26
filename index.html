@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UkRafter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <header class="header">
+        
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="index.html"><li>Головна</li></a>
+                <a href="about.html"><li>Про нас</li></a>
+                <a href="whyWe.html"><li>Чому саме Ми?</li></a>
+                <a href="faq.html"><li>Часті запитання</li></a>
+                <a href="account.html"><li>Вхід/Реєстрація</li></a>
+              </ul>
+            </div>
+          </nav>
+        <div class="container-fluid header-btn">
+            <div class="d-flex justify-content-between">
+                <a href="login.html">вхід</a>
+                <a href="signup.html">реєстрація</a>
+              </div>
+        </div>
+
+        <div class="container-fluid header-logotype">
+            <img src="./img/logotype-img.png" alt="">
+        </div>
+        
+        <div class="gradient"></div>
+
+        <div class="container-fluid header-container">
+            <h2 class="header-container_title">Створи подорож сам</h2>
+            <div class="container d-flex justify-content-between">
+                <div class="container-item">
+                    <p><svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_b_25_596)">
+                        <path d="M3.14211 4.71936L3.14212 4.71937L3.14368 4.71641L4.50358 2.13727L5.87454 4.71641L5.87611 4.71936L7.86901 8.49905L4.4993 14.8641C4.34111 14.5659 4.1864 14.2743 4.03393 13.987C3.07926 12.188 2.21263 10.5548 1.13132 8.50221L3.14211 4.71936Z" stroke="#79655E" stroke-width="2"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_b_25_596" x="-8" y="-8" width="25" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="4"/>
+                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_596"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_596" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                        Місто
+                        </p>
+                        <p>Одеса</p>
+                </div>
+
+                <div class="container-item">
+                    <p><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.8 16.5H7.2V14.1H8.8V16.5ZM13.0912 14.7224L11.3944 13.0256L12.5256 11.8944L14.2232 13.592L13.0928 14.7224H13.0912ZM2.9088 14.7224L1.7768 13.5912L3.4728 11.8936L4.6048 13.0248L2.9088 14.7216V14.7224ZM8 12.5056C5.78798 12.5047 3.99541 10.711 3.996 8.49893C3.99659 6.28691 5.79011 4.49411 8.00213 4.4944C10.2142 4.49469 12.0072 6.28798 12.0072 8.5C12.005 10.7119 10.2119 12.5043 8 12.5056ZM8 6.0944C6.67163 6.09528 5.59541 7.1727 5.596 8.50107C5.59659 9.82943 6.67377 10.9059 8.00213 10.9056C9.3305 10.9053 10.4072 9.82837 10.4072 8.5C10.4059 7.17135 9.32865 6.09484 8 6.0944ZM16 9.3H13.6V7.7H16V9.3ZM2.4 9.3H0V7.7H2.4V9.3ZM12.5248 5.1064L11.3944 3.9744L13.0912 2.2768L14.2232 3.4088L12.5256 5.1056L12.5248 5.1064ZM3.4744 5.1064L1.7784 3.4096L2.9104 2.2784L4.6064 3.976L3.4752 5.1056L3.4744 5.1064ZM8.8 2.9H7.2V0.5H8.8V2.9Z" fill="#79655E"/>
+                        </svg>                        
+                        Поророжує
+                        </p>
+                        <p>Молода пара</p>
+                </div>
+
+                <div class="container-item">
+                    <p><svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.78585 8.68098C5.22637 8.68098 5.58349 8.3285 5.58349 7.89369C5.58349 7.45889 5.22637 7.10641 4.78585 7.10641C4.34532 7.10641 3.98821 7.45889 3.98821 7.89369C3.98821 8.3285 4.34532 8.68098 4.78585 8.68098Z" fill="#79655E"/>
+                        <path d="M8.77405 7.89369C8.77405 8.3285 8.41694 8.68098 7.97641 8.68098C7.53589 8.68098 7.17877 8.3285 7.17877 7.89369C7.17877 7.45889 7.53589 7.10641 7.97641 7.10641C8.41694 7.10641 8.77405 7.45889 8.77405 7.89369Z" fill="#79655E"/>
+                        <path d="M11.167 8.68098C11.6075 8.68098 11.9646 8.3285 11.9646 7.89369C11.9646 7.45889 11.6075 7.10641 11.167 7.10641C10.7264 7.10641 10.3693 7.45889 10.3693 7.89369C10.3693 8.3285 10.7264 8.68098 11.167 8.68098Z" fill="#79655E"/>
+                        <path d="M5.58349 11.0428C5.58349 11.4776 5.22637 11.8301 4.78585 11.8301C4.34532 11.8301 3.98821 11.4776 3.98821 11.0428C3.98821 10.608 4.34532 10.2555 4.78585 10.2555C5.22637 10.2555 5.58349 10.608 5.58349 11.0428Z" fill="#79655E"/>
+                        <path d="M7.97641 11.8301C8.41694 11.8301 8.77405 11.4776 8.77405 11.0428C8.77405 10.608 8.41694 10.2555 7.97641 10.2555C7.53589 10.2555 7.17877 10.608 7.17877 11.0428C7.17877 11.4776 7.53589 11.8301 7.97641 11.8301Z" fill="#79655E"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.78585 0.808156C4.78585 0.373352 4.42873 0.020874 3.98821 0.020874C3.54768 0.020874 3.19056 0.373352 3.19056 0.808156H1.59528C0.714232 0.808156 0 1.51311 0 2.38272V13.4047C0 14.2743 0.714233 14.9792 1.59528 14.9792H14.3575C15.2386 14.9792 15.9528 14.2743 15.9528 13.4047V2.38272C15.9528 1.51311 15.2386 0.808156 14.3575 0.808156H12.7623C12.7623 0.373352 12.4051 0.020874 11.9646 0.020874C11.5241 0.020874 11.167 0.373352 11.167 0.808156H4.78585ZM1.59528 3.95728V2.38272H14.3575V3.95728H1.59528ZM1.59528 5.53185V13.4047H9.70857L14.3575 8.81608V5.53185H1.59528ZM14.3575 11.0428L11.9646 13.4047H14.3575V11.0428Z" fill="#79655E"/>
+                        </svg>                        
+                        Коли
+                        </p>
+                        <p>19.01.23</p>
+                </div>
+
+                <div class="container-item">
+                    <p><svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.66667 16.5H0V15.6579C0.00367386 12.4039 2.6132 9.76687 5.83333 9.76316H9.16667C12.3868 9.76687 14.9963 12.4039 15 15.6579V16.5H13.3333V15.6579C13.3306 13.3336 11.4667 11.4502 9.16667 11.4474H5.83333C3.53329 11.4502 1.66942 13.3336 1.66667 15.6579V16.5ZM7.5 8.92105C5.19881 8.92105 3.33333 7.03594 3.33333 4.71053C3.33333 2.38512 5.19881 0.5 7.5 0.5C9.80119 0.5 11.6667 2.38512 11.6667 4.71053C11.6639 7.03478 9.80004 8.91827 7.5 8.92105ZM7.5 2.18421C6.11929 2.18421 5 3.31528 5 4.71053C5 6.10577 6.11929 7.23684 7.5 7.23684C8.88071 7.23684 10 6.10577 10 4.71053C10 3.31528 8.88071 2.18421 7.5 2.18421Z" fill="#79655E"/>
+                        </svg>                                        
+                        Подорожуючі
+                        </p>
+                        <p>2 Особи</p>
+                </div>
+
+                <div class="container-item">
+                    <button class="btn container-item_btn" type="button">
+                        Згенерувати 
+                        подорож
+                    </button>
+                </div>
+                </div>   
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="carusel">
+            <div class="container-fluid">
+                <img class="" src="./img/romb-city.png" alt="">
+                <p>Багато міст - багато варацій!</p>
+            </div>
+                <div class="wrapper-slider">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="slider-item_bg first_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>Майстер-клас кавового живопису</p>    
+
+                                        <p>₴ 300 / 1 людина</p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>5.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_115)">
+                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item_bg second_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>ONE LOVE espresso bar</p>    
+
+                                        <p>₴ 230</p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>5.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_115)">
+                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item_bg thrid_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>IQ Hotel</p>    
+
+                                        <p>Починаючи з <br> ₴ 350 за ніч </p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>4.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_75)">
+                                                <path d="M2.94678 13.2564L2.94762 13.2579L5.00177 16.9704L7.07263 13.2579L7.07346 13.2564L9.42829 9.00049L4.99973 1.02907C4.62838 1.69646 4.27813 2.32543 3.9379 2.93641C2.83619 4.91487 1.83954 6.70463 0.571872 8.99883L2.94678 13.2564Z" stroke="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_75" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_75"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_75" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+                                                
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item_bg second_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>ONE LOVE espresso bar</p>    
+
+                                        <p>₴ 230</p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>5.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_115)">
+                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item_bg thrid_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>IQ Hotel</p>    
+
+                                        <p>Починаючи з <br> ₴ 350 за ніч </p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>4.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_75)">
+                                                <path d="M2.94678 13.2564L2.94762 13.2579L5.00177 16.9704L7.07263 13.2579L7.07346 13.2564L9.42829 9.00049L4.99973 1.02907C4.62838 1.69646 4.27813 2.32543 3.9379 2.93641C2.83619 4.91487 1.83954 6.70463 0.571872 8.99883L2.94678 13.2564Z" stroke="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_75" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_75"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_75" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+                                                
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="slider-item_bg first_bg">
+                                <div class="row">
+                                    <div class="col-lg-11">
+                                        <p><svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 0.5C7.2069 0.5 9 2.24603 9 4.39499C9 5.17399 8.73793 5.89927 8.35172 6.51709C7.46897 7.95421 5 11.5 5 11.5C5 11.5 2.53103 7.95421 1.64828 6.51709C1.26207 5.89927 1 5.17399 1 4.39499C1 2.24603 2.7931 0.5 5 0.5Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Київ
+                                            </p>
+        
+                                        <p>Майстер-клас кавового живопису</p>    
+
+                                        <p>₴ 300 / 1 людина</p>
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <p>5.0</p>
+                                        <div class="d-flex flex-column column-ranked">
+                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g filter="url(#filter0_b_1050_115)">
+                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                </g>
+                                                <defs>
+                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                </filter>
+                                                </defs>
+                                                </svg>
+
+                                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_b_1050_115)">
+                                                    <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                    <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                    </svg>
+
+                                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g filter="url(#filter0_b_1050_115)">
+                                                        <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                        <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                        <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                        </filter>
+                                                        </defs>
+                                                        </svg>
+
+                                                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g filter="url(#filter0_b_1050_115)">
+                                                            <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                            </g>
+                                                            <defs>
+                                                            <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                            </filter>
+                                                            </defs>
+                                                            </svg>
+
+                                                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g filter="url(#filter0_b_1050_115)">
+                                                                <path d="M5 5.96244e-08C3.1579 3.31277 1.88259 5.59149 -1.07324e-07 9L2.51012 13.5L5 18L7.51012 13.5L10 9L5 5.96244e-08Z" fill="white"/>
+                                                                </g>
+                                                                <defs>
+                                                                <filter id="filter0_b_1050_115" x="-10" y="-10" width="30" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="5"/>
+                                                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1050_115"/>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1050_115" result="shape"/>
+                                                                </filter>
+                                                                </defs>
+                                                                </svg>
+                                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="img-gallery">
+            <div class="container-fluid gallery-container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Шукай те, що
+                            в твоїх смаках</p>
+                        <button class="btn" type="button">
+                            Переглянути
+                        </button>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="gallery-container_item active-relaxing" style="margin-top: 120px;">
+                            <p>Активний відпочинок в
+                                горах</p>
+                                <svg width="135" height="257" viewBox="0 0 135 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g  filter="url(#filter0_b_25_564)">
+                                    <path class="gallery-container_btn" d="M67.5 244C45.2106 201.486 29.7794 172.243 6.99999 128.5L37.3725 70.75L67.5 13L97.8725 70.75L128 128.5L67.5 244Z" fill="#919191" fill-opacity="0.14"/>
+                                    </g>
+                                    <path d="M34.3289 64.4832L34.3297 64.4818L67.5018 1.07519L100.944 64.4818L100.944 64.4832L134.435 128.5L67.4998 255.925C60.4084 242.438 53.936 230.146 47.7112 218.323C32.3497 189.148 18.4957 162.835 0.564684 128.501L34.3289 64.4832Z" stroke="#F0D99F"/>
+                                    <path d="M53.2928 150.79H53.3978C53.4958 150.79 53.5868 150.748 53.6708 150.664C53.7548 150.58 53.8248 150.482 53.8808 150.37C53.9508 150.258 53.9998 150.139 54.0278 150.013C54.0558 149.873 54.0698 149.747 54.0698 149.635V138.589L48.6518 151.231L43.5068 139.24V149.635C43.5068 149.747 43.5208 149.873 43.5488 150.013C43.5768 150.139 43.6188 150.258 43.6748 150.37C43.7448 150.482 43.8218 150.58 43.9058 150.664C43.9898 150.748 44.0878 150.79 44.1998 150.79H44.3048V151H42.0158V150.79H42.1208C42.2188 150.79 42.3098 150.748 42.3938 150.664C42.4778 150.58 42.5478 150.482 42.6038 150.37C42.6598 150.258 42.7018 150.139 42.7298 150.013C42.7578 149.873 42.7718 149.747 42.7718 149.635V138.442C42.7718 138.344 42.7578 138.232 42.7298 138.106C42.7018 137.98 42.6598 137.861 42.6038 137.749C42.5478 137.637 42.4778 137.546 42.3938 137.476C42.3098 137.392 42.2188 137.35 42.1208 137.35H42.0158V137.14H44.1578L49.0298 148.627L53.9018 137.14H56.2748V137.35H56.1698C56.0578 137.35 55.9598 137.392 55.8758 137.476C55.7918 137.546 55.7148 137.637 55.6448 137.749C55.5888 137.861 55.5468 137.98 55.5188 138.106C55.4908 138.232 55.4768 138.344 55.4768 138.442V149.635C55.4768 149.747 55.4908 149.873 55.5188 150.013C55.5468 150.139 55.5888 150.258 55.6448 150.37C55.7148 150.482 55.7918 150.58 55.8758 150.664C55.9598 150.748 56.0578 150.79 56.1698 150.79H56.2748V151H53.2928V150.79ZM58.613 151V150.79C58.725 150.79 58.823 150.748 58.907 150.664C58.991 150.58 59.061 150.482 59.117 150.37C59.173 150.258 59.215 150.139 59.243 150.013C59.271 149.873 59.285 149.747 59.285 149.635V143.818C59.285 143.58 59.25 143.356 59.18 143.146C59.11 142.922 58.907 142.803 58.571 142.789V142.6L60.671 141.928V149.635C60.671 149.747 60.685 149.873 60.713 150.013C60.741 150.139 60.783 150.258 60.839 150.37C60.895 150.482 60.965 150.58 61.049 150.664C61.133 150.748 61.231 150.79 61.343 150.79V151H58.613ZM58.865 139.912C58.865 139.632 58.956 139.394 59.138 139.198C59.334 139.002 59.572 138.904 59.852 138.904C60.132 138.904 60.37 139.002 60.566 139.198C60.762 139.394 60.86 139.632 60.86 139.912C60.86 140.192 60.762 140.423 60.566 140.605C60.37 140.787 60.132 140.878 59.852 140.878C59.572 140.878 59.334 140.787 59.138 140.605C58.956 140.423 58.865 140.192 58.865 139.912ZM71.3385 150.244C71.2265 150.244 71.1215 150.272 71.0235 150.328C70.9255 150.37 70.8135 150.426 70.6875 150.496C70.4495 150.636 70.1345 150.783 69.7425 150.937C69.3505 151.077 68.8605 151.147 68.2725 151.147C67.5585 151.147 66.9005 151.035 66.2985 150.811C65.7105 150.573 65.1995 150.251 64.7655 149.845C64.3315 149.425 63.9955 148.942 63.7575 148.396C63.5195 147.836 63.4005 147.234 63.4005 146.59C63.4005 145.988 63.5055 145.414 63.7155 144.868C63.9395 144.322 64.2545 143.839 64.6605 143.419C65.0665 142.999 65.5635 142.663 66.1515 142.411C66.7535 142.159 67.4325 142.033 68.1885 142.033C68.7065 142.033 69.1265 142.096 69.4485 142.222C69.7705 142.334 70.0435 142.446 70.2675 142.558C70.3935 142.628 70.5125 142.684 70.6245 142.726C70.7505 142.768 70.8765 142.789 71.0025 142.789V144.385H70.7925C70.7225 144.119 70.5965 143.888 70.4145 143.692C70.2325 143.482 70.0225 143.307 69.7845 143.167C69.5465 143.027 69.2875 142.922 69.0075 142.852C68.7275 142.782 68.4545 142.747 68.1885 142.747C67.6145 142.747 67.1105 142.852 66.6765 143.062C66.2425 143.258 65.8855 143.524 65.6055 143.86C65.3255 144.182 65.1155 144.553 64.9755 144.973C64.8355 145.393 64.7655 145.827 64.7655 146.275C64.7655 146.793 64.8425 147.304 64.9965 147.808C65.1645 148.298 65.3955 148.739 65.6895 149.131C65.9975 149.523 66.3685 149.838 66.8025 150.076C67.2505 150.314 67.7545 150.433 68.3145 150.433C68.7065 150.433 69.0705 150.377 69.4065 150.265C69.7425 150.153 70.0295 150.006 70.2675 149.824C70.5195 149.642 70.7155 149.446 70.8555 149.236C71.0095 149.012 71.1005 148.802 71.1285 148.606H71.3385V150.244ZM82.27 150.307V152.848H82.06C82.06 152.666 82.011 152.47 81.913 152.26C81.829 152.05 81.71 151.847 81.556 151.651C81.402 151.469 81.22 151.315 81.01 151.189C80.814 151.063 80.604 151 80.38 151H72.757V150.79C72.855 150.79 72.939 150.755 73.009 150.685C73.093 150.601 73.163 150.503 73.219 150.391C73.275 150.265 73.317 150.139 73.345 150.013C73.373 149.887 73.387 149.782 73.387 149.698V143.545C73.387 143.447 73.373 143.328 73.345 143.188C73.331 143.048 73.303 142.922 73.261 142.81C73.219 142.698 73.156 142.6 73.072 142.516C72.988 142.432 72.883 142.39 72.757 142.39V142.18H75.424V142.39C75.298 142.39 75.193 142.432 75.109 142.516C75.039 142.586 74.976 142.684 74.92 142.81C74.864 142.922 74.822 143.048 74.794 143.188C74.78 143.314 74.773 143.433 74.773 143.545V150.307H79.351V143.545C79.351 143.447 79.337 143.328 79.309 143.188C79.295 143.048 79.26 142.922 79.204 142.81C79.148 142.698 79.078 142.6 78.994 142.516C78.924 142.432 78.826 142.39 78.7 142.39V142.18H81.367V142.39C81.241 142.39 81.136 142.432 81.052 142.516C80.982 142.586 80.919 142.684 80.863 142.81C80.821 142.922 80.786 143.048 80.758 143.188C80.744 143.314 80.737 143.433 80.737 143.545V149.152C80.737 149.432 80.793 149.698 80.905 149.95C81.031 150.188 81.262 150.307 81.598 150.307H82.27ZM90.2016 149.635C90.2016 149.747 90.2156 149.873 90.2436 150.013C90.2716 150.139 90.3136 150.265 90.3696 150.391C90.4396 150.503 90.5096 150.601 90.5796 150.685C90.6636 150.755 90.7616 150.79 90.8736 150.79V151H88.1436V150.79C88.2416 150.79 88.3326 150.748 88.4166 150.664C88.5006 150.58 88.5706 150.482 88.6266 150.37C88.6966 150.258 88.7456 150.139 88.7736 150.013C88.8016 149.873 88.8156 149.747 88.8156 149.635V146.695C88.6616 146.723 88.4866 146.807 88.2906 146.947C88.0946 147.073 87.8916 147.241 87.6816 147.451C87.4716 147.647 87.2686 147.864 87.0726 148.102C86.8766 148.34 86.6946 148.578 86.5266 148.816C86.3866 149.012 86.2676 149.173 86.1696 149.299C86.0716 149.425 85.9876 149.544 85.9176 149.656C85.7776 149.838 85.6376 150.013 85.4976 150.181C85.3576 150.335 85.1966 150.475 85.0146 150.601C84.8466 150.727 84.6436 150.825 84.4056 150.895C84.1676 150.965 83.8876 151 83.5656 151H82.7886V150.79C82.9566 150.79 83.1246 150.741 83.2926 150.643C83.4746 150.545 83.6496 150.426 83.8176 150.286C83.9856 150.132 84.1396 149.971 84.2796 149.803C84.4336 149.621 84.5666 149.453 84.6786 149.299L85.3296 148.396C85.5676 148.074 85.8126 147.759 86.0646 147.451C86.3166 147.129 86.6036 146.877 86.9256 146.695C86.4216 146.681 85.9736 146.611 85.5816 146.485C85.1896 146.359 84.8606 146.191 84.5946 145.981C84.3286 145.771 84.1256 145.533 83.9856 145.267C83.8596 144.987 83.7966 144.693 83.7966 144.385C83.7966 144.091 83.8596 143.811 83.9856 143.545C84.1256 143.279 84.3426 143.048 84.6366 142.852C84.9306 142.642 85.3016 142.481 85.7496 142.369C86.2116 142.243 86.7646 142.18 87.4086 142.18H90.8736V142.39C90.7616 142.39 90.6636 142.432 90.5796 142.516C90.5096 142.586 90.4396 142.677 90.3696 142.789C90.3136 142.901 90.2716 143.02 90.2436 143.146C90.2156 143.272 90.2016 143.384 90.2016 143.482V149.635ZM85.1616 144.259C85.1616 144.469 85.2246 144.679 85.3506 144.889C85.4906 145.099 85.6726 145.288 85.8966 145.456C86.1346 145.624 86.4006 145.764 86.6946 145.876C86.9886 145.974 87.3036 146.023 87.6396 146.023H88.8156V142.852H87.4506C86.6106 142.852 86.0156 142.985 85.6656 143.251C85.3296 143.517 85.1616 143.853 85.1616 144.259Z" fill="white"/>
+                                    <path class="gallery-container_btn" d="M52.1973 110.14H52.5123C52.699 110.14 52.8973 110.105 53.1073 110.035C53.3173 109.965 53.5506 109.883 53.8073 109.79C54.204 109.65 54.6823 109.51 55.2423 109.37C55.8023 109.207 56.4906 109.125 57.3073 109.125C58.2406 109.125 59.069 109.265 59.7923 109.545C60.539 109.802 61.1573 110.163 61.6473 110.63C62.1606 111.073 62.5456 111.598 62.8023 112.205C63.0823 112.812 63.2223 113.442 63.2223 114.095C63.2223 115.005 62.9423 115.88 62.3823 116.72C61.8456 117.56 61.0056 118.237 59.8623 118.75C61.4723 119.217 62.674 119.963 63.4673 120.99C64.2606 122.017 64.6573 123.183 64.6573 124.49C64.6573 125.47 64.4706 126.38 64.0973 127.22C63.7473 128.037 63.2223 128.76 62.5223 129.39C61.8456 129.997 61.029 130.475 60.0723 130.825C59.1156 131.175 58.0423 131.35 56.8523 131.35C55.9656 131.35 55.2306 131.268 54.6473 131.105C54.064 130.942 53.574 130.79 53.1773 130.65C52.9206 130.557 52.6873 130.487 52.4773 130.44C52.2673 130.37 52.0573 130.335 51.8473 130.335H51.5323V127.64H51.8823C52.489 128.48 53.2356 129.122 54.1223 129.565C55.0323 129.985 55.9656 130.195 56.9223 130.195C57.7623 130.195 58.5206 130.055 59.1973 129.775C59.874 129.472 60.4456 129.075 60.9123 128.585C61.4023 128.095 61.764 127.535 61.9973 126.905C62.254 126.275 62.3823 125.622 62.3823 124.945C62.3823 124.245 62.2423 123.568 61.9623 122.915C61.6823 122.238 61.2856 121.643 60.7723 121.13C60.259 120.617 59.629 120.208 58.8823 119.905C58.159 119.602 57.3306 119.45 56.3973 119.45H54.7873V118.295H56.5723C57.2956 118.295 57.9256 118.178 58.4623 117.945C59.0223 117.712 59.489 117.397 59.8623 117C60.2356 116.603 60.5156 116.16 60.7023 115.67C60.889 115.18 60.9823 114.667 60.9823 114.13C60.9823 113.64 60.889 113.162 60.7023 112.695C60.539 112.228 60.2823 111.82 59.9323 111.47C59.5823 111.097 59.1506 110.793 58.6373 110.56C58.1473 110.327 57.5756 110.21 56.9223 110.21C56.129 110.21 55.3356 110.432 54.5423 110.875C53.749 111.318 53.084 111.983 52.5473 112.87H52.1973V110.14ZM74.4504 131V130.65C74.7771 130.65 75.0221 130.603 75.1854 130.51C75.3721 130.393 75.5004 130.253 75.5705 130.09C75.6638 129.903 75.7104 129.705 75.7104 129.495C75.7338 129.262 75.7455 129.028 75.7455 128.795V125.365H66.1904L78.0204 108.6V123.615H80.1554V125.365H78.0204V128.795C78.0204 129.262 78.1021 129.693 78.2654 130.09C78.4521 130.463 78.8254 130.65 79.3855 130.65V131H74.4504ZM75.7455 113.815C74.5788 115.472 73.4121 117.105 72.2454 118.715C71.1021 120.325 69.9471 121.958 68.7804 123.615H75.7455V113.815Z" fill="white"/>
+                                    <path d="M62 167H74M74 167L70.5 164M74 167L70.5 170" stroke="white"/>
+                                    <defs>
+                                    <filter  id="filter0_b_25_564" x="-13" y="-7" width="161" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur  in="BackgroundImageFix" stdDeviation="10"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_564"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_564" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="gallery-container_item jump">
+                            <p>Стрибок з водоспаду</p>
+                                <svg width="135" height="257" viewBox="0 0 135 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_b_25_550)">
+                                    <path class="gallery-container_btn" d="M67.5 244C45.2106 201.486 29.7794 172.243 6.99999 128.5L37.3725 70.75L67.5 13L97.8725 70.75L128 128.5L67.5 244Z" fill="#919191" fill-opacity="0.14"/>
+                                    </g>
+                                    <path d="M34.3289 64.4832L34.3297 64.4818L67.5018 1.07519L100.944 64.4818L100.944 64.4832L134.435 128.5L67.4998 255.925C60.4084 242.438 53.936 230.146 47.7112 218.323C32.3497 189.148 18.4957 162.835 0.564684 128.501L34.3289 64.4832Z" stroke="#F0D99F"/>
+                                    <path d="M53.6123 149.635C53.6123 149.747 53.6263 149.873 53.6543 150.013C53.6823 150.139 53.7243 150.258 53.7803 150.37C53.8503 150.482 53.9273 150.58 54.0113 150.664C54.0953 150.748 54.1933 150.79 54.3053 150.79V151H51.5753V150.79C51.6873 150.79 51.7853 150.755 51.8693 150.685C51.9533 150.601 52.0233 150.503 52.0793 150.391C52.1353 150.265 52.1773 150.139 52.2053 150.013C52.2333 149.873 52.2473 149.747 52.2473 149.635V143.965L48.7403 151.189L45.3803 144.385V149.635C45.3803 149.747 45.3943 149.873 45.4223 150.013C45.4503 150.139 45.4923 150.258 45.5483 150.37C45.6043 150.482 45.6743 150.58 45.7583 150.664C45.8423 150.748 45.9403 150.79 46.0523 150.79V151H44.0153V150.79C44.1273 150.79 44.2253 150.748 44.3093 150.664C44.3933 150.58 44.4563 150.482 44.4983 150.37C44.5543 150.258 44.5963 150.139 44.6243 150.013C44.6523 149.873 44.6663 149.747 44.6663 149.635V143.482C44.6663 143.23 44.6313 142.985 44.5613 142.747C44.5053 142.509 44.3233 142.39 44.0153 142.39V142.18H45.8843L49.0973 148.753L52.3103 142.18H54.3053V142.39C54.0953 142.39 53.9273 142.523 53.8013 142.789C53.6753 143.041 53.6123 143.272 53.6123 143.482V149.635ZM56.6545 151V150.79C56.7665 150.79 56.8645 150.748 56.9485 150.664C57.0325 150.58 57.1025 150.482 57.1585 150.37C57.2145 150.258 57.2565 150.139 57.2845 150.013C57.3125 149.873 57.3265 149.747 57.3265 149.635V143.818C57.3265 143.58 57.2915 143.356 57.2215 143.146C57.1515 142.922 56.9485 142.803 56.6125 142.789V142.6L58.7125 141.928V149.635C58.7125 149.747 58.7265 149.873 58.7545 150.013C58.7825 150.139 58.8245 150.258 58.8805 150.37C58.9365 150.482 59.0065 150.58 59.0905 150.664C59.1745 150.748 59.2725 150.79 59.3845 150.79V151H56.6545ZM56.9065 139.912C56.9065 139.632 56.9975 139.394 57.1795 139.198C57.3755 139.002 57.6135 138.904 57.8935 138.904C58.1735 138.904 58.4115 139.002 58.6075 139.198C58.8035 139.394 58.9015 139.632 58.9015 139.912C58.9015 140.192 58.8035 140.423 58.6075 140.605C58.4115 140.787 58.1735 140.878 57.8935 140.878C57.6135 140.878 57.3755 140.787 57.1795 140.605C56.9975 140.423 56.9065 140.192 56.9065 139.912ZM69.38 150.244C69.268 150.244 69.163 150.272 69.065 150.328C68.967 150.37 68.855 150.426 68.729 150.496C68.491 150.636 68.176 150.783 67.784 150.937C67.392 151.077 66.902 151.147 66.314 151.147C65.6 151.147 64.942 151.035 64.34 150.811C63.752 150.573 63.241 150.251 62.807 149.845C62.373 149.425 62.037 148.942 61.799 148.396C61.561 147.836 61.442 147.234 61.442 146.59C61.442 145.988 61.547 145.414 61.757 144.868C61.981 144.322 62.296 143.839 62.702 143.419C63.108 142.999 63.605 142.663 64.193 142.411C64.795 142.159 65.474 142.033 66.23 142.033C66.748 142.033 67.168 142.096 67.49 142.222C67.812 142.334 68.085 142.446 68.309 142.558C68.435 142.628 68.554 142.684 68.666 142.726C68.792 142.768 68.918 142.789 69.044 142.789V144.385H68.834C68.764 144.119 68.638 143.888 68.456 143.692C68.274 143.482 68.064 143.307 67.826 143.167C67.588 143.027 67.329 142.922 67.049 142.852C66.769 142.782 66.496 142.747 66.23 142.747C65.656 142.747 65.152 142.852 64.718 143.062C64.284 143.258 63.927 143.524 63.647 143.86C63.367 144.182 63.157 144.553 63.017 144.973C62.877 145.393 62.807 145.827 62.807 146.275C62.807 146.793 62.884 147.304 63.038 147.808C63.206 148.298 63.437 148.739 63.731 149.131C64.039 149.523 64.41 149.838 64.844 150.076C65.292 150.314 65.796 150.433 66.356 150.433C66.748 150.433 67.112 150.377 67.448 150.265C67.784 150.153 68.071 150.006 68.309 149.824C68.561 149.642 68.757 149.446 68.897 149.236C69.051 149.012 69.142 148.802 69.17 148.606H69.38V150.244ZM80.3115 150.307V152.848H80.1015C80.1015 152.666 80.0525 152.47 79.9545 152.26C79.8705 152.05 79.7515 151.847 79.5975 151.651C79.4435 151.469 79.2615 151.315 79.0515 151.189C78.8555 151.063 78.6455 151 78.4215 151H70.7985V150.79C70.8965 150.79 70.9805 150.755 71.0505 150.685C71.1345 150.601 71.2045 150.503 71.2605 150.391C71.3165 150.265 71.3585 150.139 71.3865 150.013C71.4145 149.887 71.4285 149.782 71.4285 149.698V143.545C71.4285 143.447 71.4145 143.328 71.3865 143.188C71.3725 143.048 71.3445 142.922 71.3025 142.81C71.2605 142.698 71.1975 142.6 71.1135 142.516C71.0295 142.432 70.9245 142.39 70.7985 142.39V142.18H73.4655V142.39C73.3395 142.39 73.2345 142.432 73.1505 142.516C73.0805 142.586 73.0175 142.684 72.9615 142.81C72.9055 142.922 72.8635 143.048 72.8355 143.188C72.8215 143.314 72.8145 143.433 72.8145 143.545V150.307H77.3925V143.545C77.3925 143.447 77.3785 143.328 77.3505 143.188C77.3365 143.048 77.3015 142.922 77.2455 142.81C77.1895 142.698 77.1195 142.6 77.0355 142.516C76.9655 142.432 76.8675 142.39 76.7415 142.39V142.18H79.4085V142.39C79.2825 142.39 79.1775 142.432 79.0935 142.516C79.0235 142.586 78.9605 142.684 78.9045 142.81C78.8625 142.922 78.8275 143.048 78.7995 143.188C78.7855 143.314 78.7785 143.433 78.7785 143.545V149.152C78.7785 149.432 78.8345 149.698 78.9465 149.95C79.0725 150.188 79.3035 150.307 79.6395 150.307H80.3115ZM85.2401 146.002C85.8841 146.002 86.4441 146.065 86.9201 146.191C87.4101 146.317 87.8091 146.492 88.1171 146.716C88.4391 146.94 88.6771 147.206 88.8311 147.514C88.9851 147.808 89.0621 148.13 89.0621 148.48C89.0621 148.83 88.9851 149.159 88.8311 149.467C88.6771 149.775 88.4321 150.041 88.0961 150.265C87.7741 150.489 87.3681 150.671 86.8781 150.811C86.3881 150.937 85.8071 151 85.1351 151H81.5441V150.79C81.6561 150.79 81.7541 150.755 81.8381 150.685C81.9221 150.601 81.9921 150.503 82.0481 150.391C82.1181 150.265 82.1671 150.139 82.1951 150.013C82.2231 149.873 82.2371 149.747 82.2371 149.635V143.482C82.2371 143.384 82.2231 143.272 82.1951 143.146C82.1671 143.02 82.1181 142.901 82.0481 142.789C81.9921 142.677 81.9221 142.586 81.8381 142.516C81.7541 142.432 81.6561 142.39 81.5441 142.39V142.18H84.2951V142.39C84.0851 142.39 83.9171 142.523 83.7911 142.789C83.6651 143.041 83.6021 143.272 83.6021 143.482V146.002H85.2401ZM85.0931 150.307C86.0171 150.307 86.6821 150.16 87.0881 149.866C87.5081 149.558 87.7181 149.18 87.7181 148.732C87.7181 148.48 87.6621 148.235 87.5501 147.997C87.4381 147.745 87.2631 147.528 87.0251 147.346C86.8011 147.15 86.5211 146.996 86.1851 146.884C85.8491 146.758 85.4641 146.695 85.0301 146.695H83.6021V150.307H85.0931Z" fill="white"/>
+                                    <path class="gallery-container_btn" d="M51.2064 111.435H51.5214C51.638 111.435 51.778 111.377 51.9414 111.26C52.128 111.143 52.3264 111.015 52.5364 110.875C52.7697 110.712 53.038 110.525 53.3414 110.315C53.668 110.105 54.0297 109.918 54.4264 109.755C54.8464 109.568 55.313 109.417 55.8264 109.3C56.3397 109.183 56.9114 109.125 57.5414 109.125C58.3347 109.125 59.1047 109.242 59.8514 109.475C60.598 109.685 61.263 110.023 61.8464 110.49C62.4297 110.933 62.8964 111.505 63.2464 112.205C63.5964 112.905 63.7714 113.745 63.7714 114.725C63.7714 115.542 63.6314 116.288 63.3514 116.965C63.0714 117.642 62.6864 118.272 62.1964 118.855C61.7297 119.438 61.193 119.998 60.5864 120.535C60.003 121.048 59.3964 121.562 58.7664 122.075C58.1597 122.565 57.5647 123.067 56.9814 123.58C56.4214 124.093 55.908 124.63 55.4414 125.19C54.998 125.75 54.6247 126.357 54.3214 127.01C54.018 127.64 53.843 128.317 53.7964 129.04H61.0764C61.963 129.04 62.663 128.888 63.1764 128.585C63.6897 128.258 63.958 127.733 63.9814 127.01H64.2964V131H51.3464C51.3464 129.95 51.5214 128.982 51.8714 128.095C52.2214 127.185 52.6764 126.357 53.2364 125.61C53.7964 124.84 54.4147 124.128 55.0914 123.475C55.7914 122.822 56.4797 122.192 57.1564 121.585C57.7164 121.095 58.253 120.605 58.7664 120.115C59.303 119.625 59.7697 119.135 60.1664 118.645C60.5864 118.132 60.913 117.607 61.1464 117.07C61.403 116.51 61.5314 115.927 61.5314 115.32C61.5314 114.55 61.3914 113.862 61.1114 113.255C60.8547 112.648 60.5047 112.135 60.0614 111.715C59.6414 111.295 59.1514 110.98 58.5914 110.77C58.0314 110.537 57.4714 110.42 56.9114 110.42C55.7214 110.42 54.6714 110.782 53.7614 111.505C52.8514 112.205 52.1164 113.115 51.5564 114.235H51.2064V111.435ZM74.0863 122.74C74.9263 122.74 75.6613 122.6 76.2913 122.32C76.9213 122.017 77.4346 121.62 77.8313 121.13C78.2513 120.64 78.5546 120.08 78.7413 119.45C78.9513 118.82 79.0563 118.167 79.0563 117.49C79.0563 116.673 78.9279 115.857 78.6713 115.04C78.4379 114.223 78.0763 113.5 77.5863 112.87C77.1196 112.217 76.5363 111.692 75.8363 111.295C75.1596 110.875 74.3779 110.665 73.4913 110.665C72.6979 110.665 71.9979 110.828 71.3913 111.155C70.8079 111.458 70.3063 111.878 69.8863 112.415C69.4896 112.928 69.1863 113.523 68.9763 114.2C68.7896 114.877 68.6963 115.565 68.6963 116.265C68.6963 117.058 68.8129 117.84 69.0463 118.61C69.3029 119.38 69.6529 120.08 70.0963 120.71C70.5629 121.317 71.1229 121.807 71.7763 122.18C72.4529 122.553 73.2229 122.74 74.0863 122.74ZM69.1513 128.515C69.5246 128.982 69.9679 129.355 70.4813 129.635C71.0179 129.915 71.5196 130.008 71.9863 129.915C72.9896 129.915 73.8763 129.682 74.6462 129.215C75.4163 128.748 76.0696 128.13 76.6063 127.36C77.1663 126.59 77.5979 125.762 77.9013 124.875C78.2279 123.965 78.4496 123.125 78.5663 122.355C77.8896 122.962 77.1313 123.382 76.2913 123.615C75.4746 123.848 74.5996 123.965 73.6663 123.965C72.4763 123.965 71.4263 123.767 70.5163 123.37C69.6296 122.95 68.8829 122.413 68.2763 121.76C67.6929 121.083 67.2496 120.313 66.9463 119.45C66.6663 118.587 66.5263 117.7 66.5263 116.79C66.5263 115.88 66.6779 114.982 66.9813 114.095C67.2846 113.208 67.7396 112.427 68.3463 111.75C68.9529 111.05 69.6996 110.49 70.5863 110.07C71.4963 109.65 72.5463 109.44 73.7363 109.44C75.0663 109.44 76.1979 109.685 77.1313 110.175C78.0879 110.665 78.8696 111.33 79.4763 112.17C80.0829 112.987 80.5263 113.943 80.8063 115.04C81.1096 116.137 81.2613 117.28 81.2613 118.47C81.2613 120.01 81.0979 121.562 80.7713 123.125C80.4446 124.665 79.9079 126.053 79.1613 127.29C78.4379 128.503 77.4696 129.495 76.2563 130.265C75.0663 131.035 73.6079 131.42 71.8813 131.42C71.5546 131.42 71.1463 131.385 70.6563 131.315C70.1663 131.245 69.7813 131.187 69.5013 131.14C69.3379 131.117 69.1629 131.093 68.9763 131.07C68.8129 131.047 68.7546 131.035 68.8013 131.035V128.515H69.1513Z" fill="white"/>
+                                    <path d="M62 167H74M74 167L70.5 164M74 167L70.5 170" stroke="white"/>
+                                    <defs>
+                                    <filter id="filter0_b_25_550" x="-13" y="-7" width="161" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_550"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_550" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>                                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="gallery-container_item kitchen" style="margin-top: -120px;">
+                            <p>Гастрокухня</p>
+                                <svg width="135" height="257" viewBox="0 0 135 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_b_25_537)">
+                                    <path class="gallery-container_btn" d="M67.5 244C45.2106 201.486 29.7794 172.243 6.99999 128.5L37.3725 70.75L67.5 13L97.8725 70.75L128 128.5L67.5 244Z" fill="#919191" fill-opacity="0.14"/>
+                                    </g>
+                                    <path d="M34.3289 64.4832L34.3297 64.4818L67.5018 1.07519L100.944 64.4818L100.944 64.4832L134.435 128.5L67.4998 255.925C60.4084 242.438 53.936 230.146 47.7112 218.323C32.3497 189.148 18.4957 162.835 0.564684 128.501L34.3289 64.4832Z" stroke="#F0D99F"/>
+                                    <path d="M53.6123 149.635C53.6123 149.747 53.6263 149.873 53.6543 150.013C53.6823 150.139 53.7243 150.258 53.7803 150.37C53.8503 150.482 53.9273 150.58 54.0113 150.664C54.0953 150.748 54.1933 150.79 54.3053 150.79V151H51.5753V150.79C51.6873 150.79 51.7853 150.755 51.8693 150.685C51.9533 150.601 52.0233 150.503 52.0793 150.391C52.1353 150.265 52.1773 150.139 52.2053 150.013C52.2333 149.873 52.2473 149.747 52.2473 149.635V143.965L48.7403 151.189L45.3803 144.385V149.635C45.3803 149.747 45.3943 149.873 45.4223 150.013C45.4503 150.139 45.4923 150.258 45.5483 150.37C45.6043 150.482 45.6743 150.58 45.7583 150.664C45.8423 150.748 45.9403 150.79 46.0523 150.79V151H44.0153V150.79C44.1273 150.79 44.2253 150.748 44.3093 150.664C44.3933 150.58 44.4563 150.482 44.4983 150.37C44.5543 150.258 44.5963 150.139 44.6243 150.013C44.6523 149.873 44.6663 149.747 44.6663 149.635V143.482C44.6663 143.23 44.6313 142.985 44.5613 142.747C44.5053 142.509 44.3233 142.39 44.0153 142.39V142.18H45.8843L49.0973 148.753L52.3103 142.18H54.3053V142.39C54.0953 142.39 53.9273 142.523 53.8013 142.789C53.6753 143.041 53.6123 143.272 53.6123 143.482V149.635ZM56.6545 151V150.79C56.7665 150.79 56.8645 150.748 56.9485 150.664C57.0325 150.58 57.1025 150.482 57.1585 150.37C57.2145 150.258 57.2565 150.139 57.2845 150.013C57.3125 149.873 57.3265 149.747 57.3265 149.635V143.818C57.3265 143.58 57.2915 143.356 57.2215 143.146C57.1515 142.922 56.9485 142.803 56.6125 142.789V142.6L58.7125 141.928V149.635C58.7125 149.747 58.7265 149.873 58.7545 150.013C58.7825 150.139 58.8245 150.258 58.8805 150.37C58.9365 150.482 59.0065 150.58 59.0905 150.664C59.1745 150.748 59.2725 150.79 59.3845 150.79V151H56.6545ZM56.9065 139.912C56.9065 139.632 56.9975 139.394 57.1795 139.198C57.3755 139.002 57.6135 138.904 57.8935 138.904C58.1735 138.904 58.4115 139.002 58.6075 139.198C58.8035 139.394 58.9015 139.632 58.9015 139.912C58.9015 140.192 58.8035 140.423 58.6075 140.605C58.4115 140.787 58.1735 140.878 57.8935 140.878C57.6135 140.878 57.3755 140.787 57.1795 140.605C56.9975 140.423 56.9065 140.192 56.9065 139.912ZM69.38 150.244C69.268 150.244 69.163 150.272 69.065 150.328C68.967 150.37 68.855 150.426 68.729 150.496C68.491 150.636 68.176 150.783 67.784 150.937C67.392 151.077 66.902 151.147 66.314 151.147C65.6 151.147 64.942 151.035 64.34 150.811C63.752 150.573 63.241 150.251 62.807 149.845C62.373 149.425 62.037 148.942 61.799 148.396C61.561 147.836 61.442 147.234 61.442 146.59C61.442 145.988 61.547 145.414 61.757 144.868C61.981 144.322 62.296 143.839 62.702 143.419C63.108 142.999 63.605 142.663 64.193 142.411C64.795 142.159 65.474 142.033 66.23 142.033C66.748 142.033 67.168 142.096 67.49 142.222C67.812 142.334 68.085 142.446 68.309 142.558C68.435 142.628 68.554 142.684 68.666 142.726C68.792 142.768 68.918 142.789 69.044 142.789V144.385H68.834C68.764 144.119 68.638 143.888 68.456 143.692C68.274 143.482 68.064 143.307 67.826 143.167C67.588 143.027 67.329 142.922 67.049 142.852C66.769 142.782 66.496 142.747 66.23 142.747C65.656 142.747 65.152 142.852 64.718 143.062C64.284 143.258 63.927 143.524 63.647 143.86C63.367 144.182 63.157 144.553 63.017 144.973C62.877 145.393 62.807 145.827 62.807 146.275C62.807 146.793 62.884 147.304 63.038 147.808C63.206 148.298 63.437 148.739 63.731 149.131C64.039 149.523 64.41 149.838 64.844 150.076C65.292 150.314 65.796 150.433 66.356 150.433C66.748 150.433 67.112 150.377 67.448 150.265C67.784 150.153 68.071 150.006 68.309 149.824C68.561 149.642 68.757 149.446 68.897 149.236C69.051 149.012 69.142 148.802 69.17 148.606H69.38V150.244ZM80.3115 150.307V152.848H80.1015C80.1015 152.666 80.0525 152.47 79.9545 152.26C79.8705 152.05 79.7515 151.847 79.5975 151.651C79.4435 151.469 79.2615 151.315 79.0515 151.189C78.8555 151.063 78.6455 151 78.4215 151H70.7985V150.79C70.8965 150.79 70.9805 150.755 71.0505 150.685C71.1345 150.601 71.2045 150.503 71.2605 150.391C71.3165 150.265 71.3585 150.139 71.3865 150.013C71.4145 149.887 71.4285 149.782 71.4285 149.698V143.545C71.4285 143.447 71.4145 143.328 71.3865 143.188C71.3725 143.048 71.3445 142.922 71.3025 142.81C71.2605 142.698 71.1975 142.6 71.1135 142.516C71.0295 142.432 70.9245 142.39 70.7985 142.39V142.18H73.4655V142.39C73.3395 142.39 73.2345 142.432 73.1505 142.516C73.0805 142.586 73.0175 142.684 72.9615 142.81C72.9055 142.922 72.8635 143.048 72.8355 143.188C72.8215 143.314 72.8145 143.433 72.8145 143.545V150.307H77.3925V143.545C77.3925 143.447 77.3785 143.328 77.3505 143.188C77.3365 143.048 77.3015 142.922 77.2455 142.81C77.1895 142.698 77.1195 142.6 77.0355 142.516C76.9655 142.432 76.8675 142.39 76.7415 142.39V142.18H79.4085V142.39C79.2825 142.39 79.1775 142.432 79.0935 142.516C79.0235 142.586 78.9605 142.684 78.9045 142.81C78.8625 142.922 78.8275 143.048 78.7995 143.188C78.7855 143.314 78.7785 143.433 78.7785 143.545V149.152C78.7785 149.432 78.8345 149.698 78.9465 149.95C79.0725 150.188 79.3035 150.307 79.6395 150.307H80.3115ZM85.2401 146.002C85.8841 146.002 86.4441 146.065 86.9201 146.191C87.4101 146.317 87.8091 146.492 88.1171 146.716C88.4391 146.94 88.6771 147.206 88.8311 147.514C88.9851 147.808 89.0621 148.13 89.0621 148.48C89.0621 148.83 88.9851 149.159 88.8311 149.467C88.6771 149.775 88.4321 150.041 88.0961 150.265C87.7741 150.489 87.3681 150.671 86.8781 150.811C86.3881 150.937 85.8071 151 85.1351 151H81.5441V150.79C81.6561 150.79 81.7541 150.755 81.8381 150.685C81.9221 150.601 81.9921 150.503 82.0481 150.391C82.1181 150.265 82.1671 150.139 82.1951 150.013C82.2231 149.873 82.2371 149.747 82.2371 149.635V143.482C82.2371 143.384 82.2231 143.272 82.1951 143.146C82.1671 143.02 82.1181 142.901 82.0481 142.789C81.9921 142.677 81.9221 142.586 81.8381 142.516C81.7541 142.432 81.6561 142.39 81.5441 142.39V142.18H84.2951V142.39C84.0851 142.39 83.9171 142.523 83.7911 142.789C83.6651 143.041 83.6021 143.272 83.6021 143.482V146.002H85.2401ZM85.0931 150.307C86.0171 150.307 86.6821 150.16 87.0881 149.866C87.5081 149.558 87.7181 149.18 87.7181 148.732C87.7181 148.48 87.6621 148.235 87.5501 147.997C87.4381 147.745 87.2631 147.528 87.0251 147.346C86.8011 147.15 86.5211 146.996 86.1851 146.884C85.8491 146.758 85.4641 146.695 85.0301 146.695H83.6021V150.307H85.0931Z" fill="white"/>
+                                    <path class="gallery-container_btn" d="M59.7918 131V130.65C60.1184 130.65 60.3634 130.603 60.5268 130.51C60.7134 130.393 60.8418 130.253 60.9118 130.09C61.0051 129.903 61.0518 129.705 61.0518 129.495C61.0751 129.262 61.0868 129.028 61.0868 128.795V125.365H51.5318L63.3618 108.6V123.615H65.4968V125.365H63.3618V128.795C63.3618 129.262 63.4434 129.693 63.6068 130.09C63.7934 130.463 64.1668 130.65 64.7268 130.65V131H59.7918ZM61.0868 113.815C59.9201 115.472 58.7534 117.105 57.5868 118.715C56.4434 120.325 55.2884 121.958 54.1218 123.615H61.0868V113.815ZM72.459 131H70.814L78.339 111.435H69.204C68.924 111.435 68.6324 111.458 68.329 111.505C68.049 111.528 67.7807 111.61 67.524 111.75C67.2907 111.867 67.0924 112.065 66.929 112.345C66.789 112.602 66.719 112.952 66.719 113.395H66.369V109.475H80.719L72.459 131Z" fill="white"/>
+                                    <path d="M62 167H74M74 167L70.5 164M74 167L70.5 170" stroke="white"/>
+                                    <defs>
+                                    <filter id="filter0_b_25_537" x="-13" y="-7" width="161" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_537"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_537" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                                    
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="gallery-container_item health" style="margin-top: 32px;">
+                            <p>Місця для відновлення  ментального здоровя</p>
+                                <svg  width="135" height="257" viewBox="0 0 135 257" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 60px;">
+                                    <g filter="url(#filter0_b_25_550)">
+                                    <path class="gallery-container_btn" d="M67.5 244C45.2106 201.486 29.7794 172.243 6.99999 128.5L37.3725 70.75L67.5 13L97.8725 70.75L128 128.5L67.5 244Z" fill="#919191" fill-opacity="0.14"/>
+                                    </g>
+                                    <path d="M34.3289 64.4832L34.3297 64.4818L67.5018 1.07519L100.944 64.4818L100.944 64.4832L134.435 128.5L67.4998 255.925C60.4084 242.438 53.936 230.146 47.7112 218.323C32.3497 189.148 18.4957 162.835 0.564684 128.501L34.3289 64.4832Z" stroke="#F0D99F"/>
+                                    <path d="M53.6123 149.635C53.6123 149.747 53.6263 149.873 53.6543 150.013C53.6823 150.139 53.7243 150.258 53.7803 150.37C53.8503 150.482 53.9273 150.58 54.0113 150.664C54.0953 150.748 54.1933 150.79 54.3053 150.79V151H51.5753V150.79C51.6873 150.79 51.7853 150.755 51.8693 150.685C51.9533 150.601 52.0233 150.503 52.0793 150.391C52.1353 150.265 52.1773 150.139 52.2053 150.013C52.2333 149.873 52.2473 149.747 52.2473 149.635V143.965L48.7403 151.189L45.3803 144.385V149.635C45.3803 149.747 45.3943 149.873 45.4223 150.013C45.4503 150.139 45.4923 150.258 45.5483 150.37C45.6043 150.482 45.6743 150.58 45.7583 150.664C45.8423 150.748 45.9403 150.79 46.0523 150.79V151H44.0153V150.79C44.1273 150.79 44.2253 150.748 44.3093 150.664C44.3933 150.58 44.4563 150.482 44.4983 150.37C44.5543 150.258 44.5963 150.139 44.6243 150.013C44.6523 149.873 44.6663 149.747 44.6663 149.635V143.482C44.6663 143.23 44.6313 142.985 44.5613 142.747C44.5053 142.509 44.3233 142.39 44.0153 142.39V142.18H45.8843L49.0973 148.753L52.3103 142.18H54.3053V142.39C54.0953 142.39 53.9273 142.523 53.8013 142.789C53.6753 143.041 53.6123 143.272 53.6123 143.482V149.635ZM56.6545 151V150.79C56.7665 150.79 56.8645 150.748 56.9485 150.664C57.0325 150.58 57.1025 150.482 57.1585 150.37C57.2145 150.258 57.2565 150.139 57.2845 150.013C57.3125 149.873 57.3265 149.747 57.3265 149.635V143.818C57.3265 143.58 57.2915 143.356 57.2215 143.146C57.1515 142.922 56.9485 142.803 56.6125 142.789V142.6L58.7125 141.928V149.635C58.7125 149.747 58.7265 149.873 58.7545 150.013C58.7825 150.139 58.8245 150.258 58.8805 150.37C58.9365 150.482 59.0065 150.58 59.0905 150.664C59.1745 150.748 59.2725 150.79 59.3845 150.79V151H56.6545ZM56.9065 139.912C56.9065 139.632 56.9975 139.394 57.1795 139.198C57.3755 139.002 57.6135 138.904 57.8935 138.904C58.1735 138.904 58.4115 139.002 58.6075 139.198C58.8035 139.394 58.9015 139.632 58.9015 139.912C58.9015 140.192 58.8035 140.423 58.6075 140.605C58.4115 140.787 58.1735 140.878 57.8935 140.878C57.6135 140.878 57.3755 140.787 57.1795 140.605C56.9975 140.423 56.9065 140.192 56.9065 139.912ZM69.38 150.244C69.268 150.244 69.163 150.272 69.065 150.328C68.967 150.37 68.855 150.426 68.729 150.496C68.491 150.636 68.176 150.783 67.784 150.937C67.392 151.077 66.902 151.147 66.314 151.147C65.6 151.147 64.942 151.035 64.34 150.811C63.752 150.573 63.241 150.251 62.807 149.845C62.373 149.425 62.037 148.942 61.799 148.396C61.561 147.836 61.442 147.234 61.442 146.59C61.442 145.988 61.547 145.414 61.757 144.868C61.981 144.322 62.296 143.839 62.702 143.419C63.108 142.999 63.605 142.663 64.193 142.411C64.795 142.159 65.474 142.033 66.23 142.033C66.748 142.033 67.168 142.096 67.49 142.222C67.812 142.334 68.085 142.446 68.309 142.558C68.435 142.628 68.554 142.684 68.666 142.726C68.792 142.768 68.918 142.789 69.044 142.789V144.385H68.834C68.764 144.119 68.638 143.888 68.456 143.692C68.274 143.482 68.064 143.307 67.826 143.167C67.588 143.027 67.329 142.922 67.049 142.852C66.769 142.782 66.496 142.747 66.23 142.747C65.656 142.747 65.152 142.852 64.718 143.062C64.284 143.258 63.927 143.524 63.647 143.86C63.367 144.182 63.157 144.553 63.017 144.973C62.877 145.393 62.807 145.827 62.807 146.275C62.807 146.793 62.884 147.304 63.038 147.808C63.206 148.298 63.437 148.739 63.731 149.131C64.039 149.523 64.41 149.838 64.844 150.076C65.292 150.314 65.796 150.433 66.356 150.433C66.748 150.433 67.112 150.377 67.448 150.265C67.784 150.153 68.071 150.006 68.309 149.824C68.561 149.642 68.757 149.446 68.897 149.236C69.051 149.012 69.142 148.802 69.17 148.606H69.38V150.244ZM80.3115 150.307V152.848H80.1015C80.1015 152.666 80.0525 152.47 79.9545 152.26C79.8705 152.05 79.7515 151.847 79.5975 151.651C79.4435 151.469 79.2615 151.315 79.0515 151.189C78.8555 151.063 78.6455 151 78.4215 151H70.7985V150.79C70.8965 150.79 70.9805 150.755 71.0505 150.685C71.1345 150.601 71.2045 150.503 71.2605 150.391C71.3165 150.265 71.3585 150.139 71.3865 150.013C71.4145 149.887 71.4285 149.782 71.4285 149.698V143.545C71.4285 143.447 71.4145 143.328 71.3865 143.188C71.3725 143.048 71.3445 142.922 71.3025 142.81C71.2605 142.698 71.1975 142.6 71.1135 142.516C71.0295 142.432 70.9245 142.39 70.7985 142.39V142.18H73.4655V142.39C73.3395 142.39 73.2345 142.432 73.1505 142.516C73.0805 142.586 73.0175 142.684 72.9615 142.81C72.9055 142.922 72.8635 143.048 72.8355 143.188C72.8215 143.314 72.8145 143.433 72.8145 143.545V150.307H77.3925V143.545C77.3925 143.447 77.3785 143.328 77.3505 143.188C77.3365 143.048 77.3015 142.922 77.2455 142.81C77.1895 142.698 77.1195 142.6 77.0355 142.516C76.9655 142.432 76.8675 142.39 76.7415 142.39V142.18H79.4085V142.39C79.2825 142.39 79.1775 142.432 79.0935 142.516C79.0235 142.586 78.9605 142.684 78.9045 142.81C78.8625 142.922 78.8275 143.048 78.7995 143.188C78.7855 143.314 78.7785 143.433 78.7785 143.545V149.152C78.7785 149.432 78.8345 149.698 78.9465 149.95C79.0725 150.188 79.3035 150.307 79.6395 150.307H80.3115ZM85.2401 146.002C85.8841 146.002 86.4441 146.065 86.9201 146.191C87.4101 146.317 87.8091 146.492 88.1171 146.716C88.4391 146.94 88.6771 147.206 88.8311 147.514C88.9851 147.808 89.0621 148.13 89.0621 148.48C89.0621 148.83 88.9851 149.159 88.8311 149.467C88.6771 149.775 88.4321 150.041 88.0961 150.265C87.7741 150.489 87.3681 150.671 86.8781 150.811C86.3881 150.937 85.8071 151 85.1351 151H81.5441V150.79C81.6561 150.79 81.7541 150.755 81.8381 150.685C81.9221 150.601 81.9921 150.503 82.0481 150.391C82.1181 150.265 82.1671 150.139 82.1951 150.013C82.2231 149.873 82.2371 149.747 82.2371 149.635V143.482C82.2371 143.384 82.2231 143.272 82.1951 143.146C82.1671 143.02 82.1181 142.901 82.0481 142.789C81.9921 142.677 81.9221 142.586 81.8381 142.516C81.7541 142.432 81.6561 142.39 81.5441 142.39V142.18H84.2951V142.39C84.0851 142.39 83.9171 142.523 83.7911 142.789C83.6651 143.041 83.6021 143.272 83.6021 143.482V146.002H85.2401ZM85.0931 150.307C86.0171 150.307 86.6821 150.16 87.0881 149.866C87.5081 149.558 87.7181 149.18 87.7181 148.732C87.7181 148.48 87.6621 148.235 87.5501 147.997C87.4381 147.745 87.2631 147.528 87.0251 147.346C86.8011 147.15 86.5211 146.996 86.1851 146.884C85.8491 146.758 85.4641 146.695 85.0301 146.695H83.6021V150.307H85.0931Z" fill="white"/>
+                                    <path class="gallery-container_btn" d="M51.2064 111.435H51.5214C51.638 111.435 51.778 111.377 51.9414 111.26C52.128 111.143 52.3264 111.015 52.5364 110.875C52.7697 110.712 53.038 110.525 53.3414 110.315C53.668 110.105 54.0297 109.918 54.4264 109.755C54.8464 109.568 55.313 109.417 55.8264 109.3C56.3397 109.183 56.9114 109.125 57.5414 109.125C58.3347 109.125 59.1047 109.242 59.8514 109.475C60.598 109.685 61.263 110.023 61.8464 110.49C62.4297 110.933 62.8964 111.505 63.2464 112.205C63.5964 112.905 63.7714 113.745 63.7714 114.725C63.7714 115.542 63.6314 116.288 63.3514 116.965C63.0714 117.642 62.6864 118.272 62.1964 118.855C61.7297 119.438 61.193 119.998 60.5864 120.535C60.003 121.048 59.3964 121.562 58.7664 122.075C58.1597 122.565 57.5647 123.067 56.9814 123.58C56.4214 124.093 55.908 124.63 55.4414 125.19C54.998 125.75 54.6247 126.357 54.3214 127.01C54.018 127.64 53.843 128.317 53.7964 129.04H61.0764C61.963 129.04 62.663 128.888 63.1764 128.585C63.6897 128.258 63.958 127.733 63.9814 127.01H64.2964V131H51.3464C51.3464 129.95 51.5214 128.982 51.8714 128.095C52.2214 127.185 52.6764 126.357 53.2364 125.61C53.7964 124.84 54.4147 124.128 55.0914 123.475C55.7914 122.822 56.4797 122.192 57.1564 121.585C57.7164 121.095 58.253 120.605 58.7664 120.115C59.303 119.625 59.7697 119.135 60.1664 118.645C60.5864 118.132 60.913 117.607 61.1464 117.07C61.403 116.51 61.5314 115.927 61.5314 115.32C61.5314 114.55 61.3914 113.862 61.1114 113.255C60.8547 112.648 60.5047 112.135 60.0614 111.715C59.6414 111.295 59.1514 110.98 58.5914 110.77C58.0314 110.537 57.4714 110.42 56.9114 110.42C55.7214 110.42 54.6714 110.782 53.7614 111.505C52.8514 112.205 52.1164 113.115 51.5564 114.235H51.2064V111.435ZM74.0863 122.74C74.9263 122.74 75.6613 122.6 76.2913 122.32C76.9213 122.017 77.4346 121.62 77.8313 121.13C78.2513 120.64 78.5546 120.08 78.7413 119.45C78.9513 118.82 79.0563 118.167 79.0563 117.49C79.0563 116.673 78.9279 115.857 78.6713 115.04C78.4379 114.223 78.0763 113.5 77.5863 112.87C77.1196 112.217 76.5363 111.692 75.8363 111.295C75.1596 110.875 74.3779 110.665 73.4913 110.665C72.6979 110.665 71.9979 110.828 71.3913 111.155C70.8079 111.458 70.3063 111.878 69.8863 112.415C69.4896 112.928 69.1863 113.523 68.9763 114.2C68.7896 114.877 68.6963 115.565 68.6963 116.265C68.6963 117.058 68.8129 117.84 69.0463 118.61C69.3029 119.38 69.6529 120.08 70.0963 120.71C70.5629 121.317 71.1229 121.807 71.7763 122.18C72.4529 122.553 73.2229 122.74 74.0863 122.74ZM69.1513 128.515C69.5246 128.982 69.9679 129.355 70.4813 129.635C71.0179 129.915 71.5196 130.008 71.9863 129.915C72.9896 129.915 73.8763 129.682 74.6462 129.215C75.4163 128.748 76.0696 128.13 76.6063 127.36C77.1663 126.59 77.5979 125.762 77.9013 124.875C78.2279 123.965 78.4496 123.125 78.5663 122.355C77.8896 122.962 77.1313 123.382 76.2913 123.615C75.4746 123.848 74.5996 123.965 73.6663 123.965C72.4763 123.965 71.4263 123.767 70.5163 123.37C69.6296 122.95 68.8829 122.413 68.2763 121.76C67.6929 121.083 67.2496 120.313 66.9463 119.45C66.6663 118.587 66.5263 117.7 66.5263 116.79C66.5263 115.88 66.6779 114.982 66.9813 114.095C67.2846 113.208 67.7396 112.427 68.3463 111.75C68.9529 111.05 69.6996 110.49 70.5863 110.07C71.4963 109.65 72.5463 109.44 73.7363 109.44C75.0663 109.44 76.1979 109.685 77.1313 110.175C78.0879 110.665 78.8696 111.33 79.4763 112.17C80.0829 112.987 80.5263 113.943 80.8063 115.04C81.1096 116.137 81.2613 117.28 81.2613 118.47C81.2613 120.01 81.0979 121.562 80.7713 123.125C80.4446 124.665 79.9079 126.053 79.1613 127.29C78.4379 128.503 77.4696 129.495 76.2563 130.265C75.0663 131.035 73.6079 131.42 71.8813 131.42C71.5546 131.42 71.1463 131.385 70.6563 131.315C70.1663 131.245 69.7813 131.187 69.5013 131.14C69.3379 131.117 69.1629 131.093 68.9763 131.07C68.8129 131.047 68.7546 131.035 68.8013 131.035V128.515H69.1513Z" fill="white"/>
+                                    <path d="M62 167H74M74 167L70.5 164M74 167L70.5 170" stroke="white"/>
+                                    <defs>
+                                    <filter id="filter0_b_25_550" x="-13" y="-7" width="161" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_550"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_550" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>
+                                    
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4">
+                        <div class="gallery-container_item culture" style="margin-top: -88px;">
+                            <p>Казкові пам’ятки культури</p>
+                                <svg width="135" height="257" viewBox="0 0 135 257" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_b_25_511)">
+                                    <path class="gallery-container_btn" d="M67.5 244C45.2106 201.486 29.7794 172.243 6.99999 128.5L37.3725 70.75L67.5 13L97.8725 70.75L128 128.5L67.5 244Z" fill="#919191" fill-opacity="0.14"/>
+                                    </g>
+                                    <path d="M34.3289 64.4832L34.3297 64.4818L67.5018 1.07519L100.944 64.4818L100.944 64.4832L134.435 128.5L67.4998 255.925C60.4084 242.438 53.936 230.146 47.7112 218.323C32.3497 189.148 18.4957 162.835 0.564684 128.501L34.3289 64.4832Z" stroke="#F0D99F"/>
+                                    <path d="M53.6123 149.635C53.6123 149.747 53.6263 149.873 53.6543 150.013C53.6823 150.139 53.7243 150.258 53.7803 150.37C53.8503 150.482 53.9273 150.58 54.0113 150.664C54.0953 150.748 54.1933 150.79 54.3053 150.79V151H51.5753V150.79C51.6873 150.79 51.7853 150.755 51.8693 150.685C51.9533 150.601 52.0233 150.503 52.0793 150.391C52.1353 150.265 52.1773 150.139 52.2053 150.013C52.2333 149.873 52.2473 149.747 52.2473 149.635V143.965L48.7403 151.189L45.3803 144.385V149.635C45.3803 149.747 45.3943 149.873 45.4223 150.013C45.4503 150.139 45.4923 150.258 45.5483 150.37C45.6043 150.482 45.6743 150.58 45.7583 150.664C45.8423 150.748 45.9403 150.79 46.0523 150.79V151H44.0153V150.79C44.1273 150.79 44.2253 150.748 44.3093 150.664C44.3933 150.58 44.4563 150.482 44.4983 150.37C44.5543 150.258 44.5963 150.139 44.6243 150.013C44.6523 149.873 44.6663 149.747 44.6663 149.635V143.482C44.6663 143.23 44.6313 142.985 44.5613 142.747C44.5053 142.509 44.3233 142.39 44.0153 142.39V142.18H45.8843L49.0973 148.753L52.3103 142.18H54.3053V142.39C54.0953 142.39 53.9273 142.523 53.8013 142.789C53.6753 143.041 53.6123 143.272 53.6123 143.482V149.635ZM56.6545 151V150.79C56.7665 150.79 56.8645 150.748 56.9485 150.664C57.0325 150.58 57.1025 150.482 57.1585 150.37C57.2145 150.258 57.2565 150.139 57.2845 150.013C57.3125 149.873 57.3265 149.747 57.3265 149.635V143.818C57.3265 143.58 57.2915 143.356 57.2215 143.146C57.1515 142.922 56.9485 142.803 56.6125 142.789V142.6L58.7125 141.928V149.635C58.7125 149.747 58.7265 149.873 58.7545 150.013C58.7825 150.139 58.8245 150.258 58.8805 150.37C58.9365 150.482 59.0065 150.58 59.0905 150.664C59.1745 150.748 59.2725 150.79 59.3845 150.79V151H56.6545ZM56.9065 139.912C56.9065 139.632 56.9975 139.394 57.1795 139.198C57.3755 139.002 57.6135 138.904 57.8935 138.904C58.1735 138.904 58.4115 139.002 58.6075 139.198C58.8035 139.394 58.9015 139.632 58.9015 139.912C58.9015 140.192 58.8035 140.423 58.6075 140.605C58.4115 140.787 58.1735 140.878 57.8935 140.878C57.6135 140.878 57.3755 140.787 57.1795 140.605C56.9975 140.423 56.9065 140.192 56.9065 139.912ZM69.38 150.244C69.268 150.244 69.163 150.272 69.065 150.328C68.967 150.37 68.855 150.426 68.729 150.496C68.491 150.636 68.176 150.783 67.784 150.937C67.392 151.077 66.902 151.147 66.314 151.147C65.6 151.147 64.942 151.035 64.34 150.811C63.752 150.573 63.241 150.251 62.807 149.845C62.373 149.425 62.037 148.942 61.799 148.396C61.561 147.836 61.442 147.234 61.442 146.59C61.442 145.988 61.547 145.414 61.757 144.868C61.981 144.322 62.296 143.839 62.702 143.419C63.108 142.999 63.605 142.663 64.193 142.411C64.795 142.159 65.474 142.033 66.23 142.033C66.748 142.033 67.168 142.096 67.49 142.222C67.812 142.334 68.085 142.446 68.309 142.558C68.435 142.628 68.554 142.684 68.666 142.726C68.792 142.768 68.918 142.789 69.044 142.789V144.385H68.834C68.764 144.119 68.638 143.888 68.456 143.692C68.274 143.482 68.064 143.307 67.826 143.167C67.588 143.027 67.329 142.922 67.049 142.852C66.769 142.782 66.496 142.747 66.23 142.747C65.656 142.747 65.152 142.852 64.718 143.062C64.284 143.258 63.927 143.524 63.647 143.86C63.367 144.182 63.157 144.553 63.017 144.973C62.877 145.393 62.807 145.827 62.807 146.275C62.807 146.793 62.884 147.304 63.038 147.808C63.206 148.298 63.437 148.739 63.731 149.131C64.039 149.523 64.41 149.838 64.844 150.076C65.292 150.314 65.796 150.433 66.356 150.433C66.748 150.433 67.112 150.377 67.448 150.265C67.784 150.153 68.071 150.006 68.309 149.824C68.561 149.642 68.757 149.446 68.897 149.236C69.051 149.012 69.142 148.802 69.17 148.606H69.38V150.244ZM80.3115 150.307V152.848H80.1015C80.1015 152.666 80.0525 152.47 79.9545 152.26C79.8705 152.05 79.7515 151.847 79.5975 151.651C79.4435 151.469 79.2615 151.315 79.0515 151.189C78.8555 151.063 78.6455 151 78.4215 151H70.7985V150.79C70.8965 150.79 70.9805 150.755 71.0505 150.685C71.1345 150.601 71.2045 150.503 71.2605 150.391C71.3165 150.265 71.3585 150.139 71.3865 150.013C71.4145 149.887 71.4285 149.782 71.4285 149.698V143.545C71.4285 143.447 71.4145 143.328 71.3865 143.188C71.3725 143.048 71.3445 142.922 71.3025 142.81C71.2605 142.698 71.1975 142.6 71.1135 142.516C71.0295 142.432 70.9245 142.39 70.7985 142.39V142.18H73.4655V142.39C73.3395 142.39 73.2345 142.432 73.1505 142.516C73.0805 142.586 73.0175 142.684 72.9615 142.81C72.9055 142.922 72.8635 143.048 72.8355 143.188C72.8215 143.314 72.8145 143.433 72.8145 143.545V150.307H77.3925V143.545C77.3925 143.447 77.3785 143.328 77.3505 143.188C77.3365 143.048 77.3015 142.922 77.2455 142.81C77.1895 142.698 77.1195 142.6 77.0355 142.516C76.9655 142.432 76.8675 142.39 76.7415 142.39V142.18H79.4085V142.39C79.2825 142.39 79.1775 142.432 79.0935 142.516C79.0235 142.586 78.9605 142.684 78.9045 142.81C78.8625 142.922 78.8275 143.048 78.7995 143.188C78.7855 143.314 78.7785 143.433 78.7785 143.545V149.152C78.7785 149.432 78.8345 149.698 78.9465 149.95C79.0725 150.188 79.3035 150.307 79.6395 150.307H80.3115ZM85.2401 146.002C85.8841 146.002 86.4441 146.065 86.9201 146.191C87.4101 146.317 87.8091 146.492 88.1171 146.716C88.4391 146.94 88.6771 147.206 88.8311 147.514C88.9851 147.808 89.0621 148.13 89.0621 148.48C89.0621 148.83 88.9851 149.159 88.8311 149.467C88.6771 149.775 88.4321 150.041 88.0961 150.265C87.7741 150.489 87.3681 150.671 86.8781 150.811C86.3881 150.937 85.8071 151 85.1351 151H81.5441V150.79C81.6561 150.79 81.7541 150.755 81.8381 150.685C81.9221 150.601 81.9921 150.503 82.0481 150.391C82.1181 150.265 82.1671 150.139 82.1951 150.013C82.2231 149.873 82.2371 149.747 82.2371 149.635V143.482C82.2371 143.384 82.2231 143.272 82.1951 143.146C82.1671 143.02 82.1181 142.901 82.0481 142.789C81.9921 142.677 81.9221 142.586 81.8381 142.516C81.7541 142.432 81.6561 142.39 81.5441 142.39V142.18H84.2951V142.39C84.0851 142.39 83.9171 142.523 83.7911 142.789C83.6651 143.041 83.6021 143.272 83.6021 143.482V146.002H85.2401ZM85.0931 150.307C86.0171 150.307 86.6821 150.16 87.0881 149.866C87.5081 149.558 87.7181 149.18 87.7181 148.732C87.7181 148.48 87.6621 148.235 87.5501 147.997C87.4381 147.745 87.2631 147.528 87.0251 147.346C86.8011 147.15 86.5211 146.996 86.1851 146.884C85.8491 146.758 85.4641 146.695 85.0301 146.695H83.6021V150.307H85.0931Z" fill="white"/>
+                                    <path class="gallery-container_btn" d="M47.0516 131V130.65C47.6116 130.65 47.9616 130.487 48.1016 130.16C48.265 129.81 48.3466 129.402 48.3466 128.935V112.17C48.3466 111.937 48.23 111.82 47.9966 111.82C47.9033 111.82 47.775 111.855 47.6116 111.925L43.6216 113.185V111.925L51.7766 109.09V110.035C51.4033 110.198 51.1 110.455 50.8666 110.805C50.6566 111.155 50.575 111.563 50.6216 112.03V128.795C50.6216 129.285 50.7033 129.717 50.8666 130.09C51.03 130.463 51.4033 130.65 51.9866 130.65V131H47.0516ZM63.0885 118.05C62.2485 118.05 61.5135 118.202 60.8835 118.505C60.2768 118.785 59.7635 119.17 59.3435 119.66C58.9468 120.15 58.6435 120.71 58.4335 121.34C58.2468 121.97 58.1535 122.623 58.1535 123.3C58.1535 124.117 58.2701 124.933 58.5035 125.75C58.7601 126.567 59.1218 127.302 59.5885 127.955C60.0785 128.585 60.6618 129.11 61.3385 129.53C62.0151 129.927 62.7968 130.125 63.6835 130.125C64.4768 130.125 65.1768 129.973 65.7835 129.67C66.3901 129.343 66.8918 128.923 67.2885 128.41C67.7085 127.873 68.0118 127.267 68.1985 126.59C68.4085 125.913 68.5135 125.225 68.5135 124.525C68.5135 123.732 68.3851 122.95 68.1285 122.18C67.8951 121.41 67.5451 120.722 67.0785 120.115C66.6351 119.485 66.0751 118.983 65.3985 118.61C64.7218 118.237 63.9518 118.05 63.0885 118.05ZM68.0585 112.275C67.6851 111.808 67.2301 111.435 66.6935 111.155C66.1801 110.875 65.6901 110.735 65.2235 110.735C64.1501 110.735 63.2168 111.003 62.4235 111.54C61.6301 112.053 60.9651 112.695 60.4285 113.465C59.9151 114.235 59.5068 115.075 59.2035 115.985C58.9001 116.872 58.7018 117.7 58.6085 118.47C59.2851 117.863 60.0435 117.443 60.8835 117.21C61.7235 116.953 62.5985 116.825 63.5085 116.825C64.6985 116.825 65.7368 117.035 66.6235 117.455C67.5335 117.852 68.2801 118.388 68.8635 119.065C69.4701 119.718 69.9135 120.477 70.1935 121.34C70.4968 122.203 70.6485 123.09 70.6485 124C70.6485 124.91 70.4968 125.808 70.1935 126.695C69.8901 127.582 69.4351 128.375 68.8285 129.075C68.2218 129.752 67.4635 130.3 66.5535 130.72C65.6668 131.14 64.6285 131.35 63.4385 131.35C62.1318 131.35 61.0001 131.105 60.0435 130.615C59.0868 130.125 58.3051 129.472 57.6985 128.655C57.0918 127.815 56.6368 126.847 56.3335 125.75C56.0535 124.653 55.9135 123.51 55.9135 122.32C55.9135 120.78 56.1235 119.252 56.5435 117.735C56.9868 116.195 57.6285 114.818 58.4685 113.605C59.3085 112.368 60.3351 111.365 61.5485 110.595C62.7618 109.825 64.1501 109.44 65.7135 109.44C66.0401 109.44 66.3785 109.463 66.7285 109.51C67.1018 109.557 67.4285 109.603 67.7085 109.65C67.8485 109.673 67.9885 109.697 68.1285 109.72C68.2918 109.743 68.3851 109.755 68.4085 109.755V112.275H68.0585ZM87.9458 125.295C87.9458 126.322 87.7358 127.22 87.3158 127.99C86.9192 128.737 86.3708 129.367 85.6708 129.88C84.9942 130.37 84.2008 130.743 83.2908 131C82.3808 131.233 81.4125 131.35 80.3858 131.35C79.4292 131.35 78.4958 131.233 77.5858 131C76.6758 130.743 75.8592 130.37 75.1358 129.88C74.4125 129.367 73.8292 128.737 73.3858 127.99C72.9658 127.243 72.7558 126.368 72.7558 125.365C72.7558 124.035 73.1525 122.845 73.9458 121.795C74.7392 120.722 75.9992 119.928 77.7258 119.415C76.3958 118.808 75.4158 118.108 74.7858 117.315C74.1792 116.498 73.8758 115.507 73.8758 114.34C73.8758 113.477 74.0508 112.73 74.4008 112.1C74.7742 111.447 75.2525 110.898 75.8358 110.455C76.4425 110.012 77.1308 109.685 77.9008 109.475C78.6708 109.242 79.4525 109.125 80.2458 109.125C81.0392 109.125 81.8208 109.242 82.5908 109.475C83.3842 109.685 84.0842 110.012 84.6908 110.455C85.2975 110.898 85.7875 111.458 86.1608 112.135C86.5575 112.788 86.7558 113.558 86.7558 114.445C86.7558 115.495 86.4058 116.475 85.7058 117.385C85.0058 118.295 84.0958 118.983 82.9758 119.45C84.4225 119.87 85.6125 120.57 86.5458 121.55C87.4792 122.507 87.9458 123.755 87.9458 125.295ZM84.7258 114.97C84.7258 114.27 84.5742 113.628 84.2708 113.045C83.9908 112.462 83.6175 111.972 83.1508 111.575C82.6842 111.155 82.1475 110.84 81.5408 110.63C80.9575 110.397 80.3625 110.28 79.7558 110.28C79.2892 110.28 78.8342 110.35 78.3908 110.49C77.9475 110.63 77.5508 110.84 77.2008 111.12C76.8508 111.4 76.5592 111.75 76.3258 112.17C76.1158 112.59 76.0108 113.08 76.0108 113.64C76.0108 114.27 76.1625 114.853 76.4658 115.39C76.7692 115.927 77.1658 116.405 77.6558 116.825C78.1692 117.245 78.7408 117.618 79.3708 117.945C80.0242 118.248 80.6775 118.505 81.3308 118.715C82.3808 118.295 83.2092 117.77 83.8158 117.14C84.4225 116.51 84.7258 115.787 84.7258 114.97ZM86.1958 126.03C86.1958 125.377 86.0208 124.758 85.6708 124.175C85.3208 123.592 84.8308 123.067 84.2008 122.6C83.5708 122.11 82.8358 121.678 81.9958 121.305C81.1792 120.908 80.3158 120.57 79.4058 120.29C78.7992 120.5 78.2275 120.757 77.6908 121.06C77.1542 121.363 76.6875 121.713 76.2908 122.11C75.8942 122.507 75.5792 122.938 75.3458 123.405C75.1125 123.872 74.9958 124.373 74.9958 124.91C74.9958 125.61 75.1592 126.275 75.4858 126.905C75.8125 127.535 76.2442 128.095 76.7808 128.585C77.3175 129.052 77.9358 129.413 78.6358 129.67C79.3358 129.927 80.0592 130.055 80.8058 130.055C81.4358 130.055 82.0658 129.962 82.6958 129.775C83.3492 129.565 83.9208 129.297 84.4108 128.97C84.9242 128.62 85.3442 128.2 85.6708 127.71C86.0208 127.22 86.1958 126.66 86.1958 126.03Z" fill="white"/>
+                                    <path d="M62 167H74M74 167L70.5 164M74 167L70.5 170" stroke="white"/>
+                                    <defs>
+                                    <filter id="filter0_b_25_511" x="-13" y="-7" width="161" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_25_511"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_25_511" result="shape"/>
+                                    </filter>
+                                    </defs>
+                                    </svg>                                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="img-gallery2">
+            <div class="container-fluid">
+                <img class="" src="./img/romb-city.png" alt="">
+                <p>Бронюй</p>
+            </div>
+            <div class="container-fluid gallery-container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item auto">
+                            <p>авто</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item hotel">
+                            <p>готелі</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item eating">
+                            <p>Харчування</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item relaxing">
+                            <p>відпочинок</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item personal-guide">
+                            <p>Особистий 
+                                гід</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="gallery-container_item rowing">
+                            <p>Веслування</p>
+                            <svg width="141" height="75" viewBox="0 0 141 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_217_134)">
+                                <path class="gallery-container_btn" d="M134 37.5C110.627 49.8421 94.549 58.3866 70.5 71L38.75 54.1822L7 37.5L38.75 20.6822L70.5 4L134 37.5Z" fill="#919191" fill-opacity="0.14"/>
+                                </g>
+                                <path class="gallery-container_btn" d="M35.4855 55.7331L35.4841 55.7323L1.06471 37.4982L35.4841 19.1159L35.4855 19.1151L70.4995 0.566077L139.936 37.5002C132.679 41.3638 126.051 44.8981 119.671 48.2992C103.696 56.8168 89.285 64.5 70.5012 74.4338L35.4855 55.7331Z" stroke="#F0D99F"/>
+                                <defs>
+                                <filter id="filter0_b_217_134" x="-13" y="-16" width="167" height="107" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="10"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_217_134"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_217_134" result="shape"/>
+                                </filter>
+                                </defs>
+                                </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="generation">
+            <div class="container-fluid generation-container">
+                    <div class="generation-container_item">
+                        <div class="row">
+                            <div class="col-lg-6 txt">
+                                <p>Платформа
+                                    якій немає 
+                                    рівних </p>
+                            </div>
+                            
+                            <div class="col-lg-6 txt">
+                                <p>Це перша платформа, де ти сам, безкоштовно зареєстувавшись та пройшовши опитування для визначення інтересів зможеш без витрат на спеціалістів за допомогою нашого генератора створити план подорожі та провести час з користю пізнаючи околиці України.</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="generation-container_img"></div>
+                    
+                    <div class="generation-container_item">
+                        <div class="row">
+                            <div class="col-lg-6 txt">
+                                <p>Культурна спадщина</p>
+                            </div>
+                            
+                            <div class="col-lg-6 txt">
+                                <p>Культурна спадщина це не завжди нудні пам’ятники та будинки з історією яких слід часто ознайомлюватись з істориками. Існує доволі багато вражаючих та маловідомих місць про які мало хто знає і навіть не уявляє про їх існування! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="generation-container_item">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="./img/generation-img.png" alt="">
+                            </div>
+
+                            <div class="col-lg-6">
+                                <p class="text">Ви можете планувати свій час за допомогою нас. Ваш ментальний відпочинок - для нас найважливіший!</p>
+                                <button class="btn" type="button">Допоможіть мені
+                                    згенерувати подорож</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid generation-container2">
+                        <p class="generation-container_title">
+                            Етапи для подальшої 
+                            генерації подорожі 
+                        </p>
+
+                        <div class="generation-container2_item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="romb">
+                                        <p>1</p>
+                                    </div>                                 
+                                </div>
+    
+                                <div class="col-lg-6 txt">
+                                    <p>Зареєструйся</p>
+    
+                                    <p>Реєстрація може здійснюватися через Ваш обліковий запис Google. Нещодавно було додано нову можливість реєстрації через Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="generation-container2_item">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <svg width="1" height="67" viewBox="0 0 1 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" y1="-0.000488259" x2="0.499997" y2="66.9995" stroke="white"/>
+                                        </svg>  
+                                    <div class="romb">
+                                        <p>2</p>
+                                    </div>                               
+                                </div>
+    
+                                <div class="col-lg-6 txt" style="margin-top: 114px;">
+                                    <p>Згенеруй свою майбутню подорож</p>
+    
+                                    <p>Пройди усі необхідні етапи для генерації подорожі</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="generation-container2_item" style="margin-top: 65px;">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <svg width="1" height="67" viewBox="0 0 1 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="0.5" y1="-0.000488259" x2="0.499997" y2="66.9995" stroke="white"/>
+                                        </svg>  
+                                    <div class="romb">
+                                        <p>3</p>
+                                    </div>                               
+                                </div>
+    
+                                <div class="col-lg-6 txt" style="margin-top: 76px;">
+                                    <p>Перевір свій персональний кабінет</p>
+    
+                                    <p>Перевір чи все, що згенерувала наша програма потрапило до персонального кабінету. Надалі забронюй все, щоб відпочити якнайкраще</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="generation-container_btn">
+                        <button class="btn generation-btn">
+                            згенерувати подорож
+                        </button>
+
+                        <p>Це безкоштовно. Не хвилюйся)</p>
+                    </div>
+            </div>
+
+            <img class="clouds" src="./img/clouds.png" alt="">
+        </section>
+
+       <section class="social">
+           <div class="container-fluid social-container">
+               <p>Будь в курсі наших оновлень</p>
+               <p>Переходь в наші соціальні мережі</p>
+
+               <div class="social-wrapper container-fluid">
+                    <a class="social-container_item">
+                        <img src="./img/icon-google.png" alt="" class="icon">
+                        <p>Google account</p>
+                    </a>
+
+                    <a class="social-container_item">
+                        <img src="./img/icon-facebook.png" alt="" class="icon">
+                        <p>Facebook</p>
+                    </a>
+
+                    <a class="social-container_item">
+                        <img src="./img/icon-instagram.png" alt="" class="icon">
+                        <p>Instagram</p>
+                    </a>
+
+                    <a class="social-container_item">
+                        <img src="./img/icon-youtube.png" alt="" class="icon">
+                        <p>YouTube</p>
+                    </a>
+
+                    <a class="social-container_item">
+                        <i class="uil uil-telegram"></i>
+                        <p>Telegram</p>
+                    </a>
+            </div>
+           </div>
+       </section>
+
+       <section class="reviews">
+        <div class="container-fluid">
+            <img class="" src="./img/romb-city.png" alt="">
+            <p>Відгуки постійних
+                користувачів</p>
+        </div>
+
+
+        <div class="wrapper-comment_slider">
+            <div class="comment-slider">
+                <div class="comment-container">
+                    <img class="avatar" src="./img/avatar-img1.png" alt="">
+                    <p>“Велике дякую команді “UkRafter” за таку круту <br>
+                        розробку. Система ніби відчула те, що я люблю. <br>
+                        Але програма трішечки не здогадалась, що я не <br>
+                        полюбляю Азійську кухню. Проте нещодавно, <br>
+                        зайшовши на сайт, я помітив, що її було додано! <br>
+                         Це був чудовий досвід. Дякую команді”</p>
+                         <div class="comment-container_item">
+                            <p>- Володимир Кузьменко</p>
+                            <p>Користувач Google</p>
+                         </div>
+                </div>
+                <div class="comment-container">
+                    <img class="avatar" src="./img/avatar-img2.png" alt="">
+                    <p>“Минулого тижня я з сім’єю мала можливість <br>
+                        скористатись вашою  розробкою. Відпочивала <br>
+                        в Карпатах. Отримала дуже багато приємних <br>
+                        вражень. Всім рекомендую! “</p>
+                        <div class="comment-container_item"><p>
+                            - Марія Довгань
+                        </p>
+                        <p>Користувач Facebook</p>
+                    </div>
+                        
+                </div>
+                <div class="comment-container">
+                    <img class="avatar" src="./img/avatar-img1.png" alt="">
+                    <p>“Велике дякую команді “UkRafter” за таку круту <br>
+                        розробку. Система ніби відчула те, що я люблю. <br>
+                        Але програма трішечки не здогадалась, що я не <br>
+                        полюбляю Азійську кухню. Проте нещодавно, <br>
+                        зайшовши на сайт, я помітив, що її було додано! <br>
+                         Це був чудовий досвід. Дякую команді”</p>
+                         <div class="comment-container_item">
+                            <p>
+                                - Володимир Кузьменко
+                            </p>
+                            <p>Користувач Google</p>
+                         </div>
+                </div>
+                <div class="comment-container">
+                    <img class="avatar" src="./img/avatar-img2.png" alt="">
+                    <p>“Велике дякую команді “UkRafter” за таку круту <br>
+                        розробку. Система ніби відчула те, що я люблю. <br>
+                        Але програма трішечки не здогадалась, що я не <br>
+                        полюбляю Азійську кухню. Проте нещодавно, <br>
+                        зайшовши на сайт, я помітив, що її було додано! <br>
+                         Це був чудовий досвід. Дякую команді”</p>
+                         <div class="comment-container_item">
+                            <p>
+                                - Володимир Кузьменко
+                            </p>
+                            <p>Користувач Google</p>
+                         </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="feedback">
+           <div class="container-fluid feedback-container">
+               <div class="feedback-container_item">
+                    <p>Зв’язок з нами</p>
+                    <p>Щоб отримати фідбек будь ласка зареєструйтесь</p>
+               </div>
+
+               <div class="feedback-container_input">
+                   <p>Email</p>
+                   <div class="form">
+                        <input type="email" class="form-control" id="floatingInput">
+                  </div>
+               </div>
+
+               <div class="feedback-container_input">
+                    <p>Password</p>
+                    <div class="form">
+                        <input type="password" class="form-control" id="floatingPassword">
+                    </div>
+               </div>
+
+               <button class="btn feedback-btn" type="button">
+                    Надіслати
+               </button>
+           </div>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid footer-container">
+            <div class="row text-center">
+                <div class="col-lg-6">
+                    <p>© 2022 Всі права захищені | UkRafter</p>
+                </div>
+                <div class="col-lg-6">
+                    <p>Сайт компанії   |   Політика конфіденційності</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- libs -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+
+    <script src="./libs/slick.min.js"></script>
+    
+
+    <script src="./js/slider.js"></script>
+</body>
+</html>

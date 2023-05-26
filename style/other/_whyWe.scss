@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Forum';
+    src: url('../fonts/Forum/Forum-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../fonts/Manrope/Manrope-VariableFont_wght.ttf');
+    font-style: normal;
+}
+
+@mixin container ($w, $h, $m, $p) {
+    width: $w;
+    height: $h;
+    margin: $m;
+    padding: $p;
+}
+.mountains{
+    background-image: url('../img/mountains2-img(whyWe).png') !important;
+
+    .header-container2{
+        @include container(1110px, 881px, 340px auto 0, 0);
+
+        &_item{
+            @include container(349px, 592px, 0, 0);
+            position: relative;
+            z-index: 1;
+            
+            img{
+                margin: 0 57px;
+            }
+            
+            p{
+                &:nth-child(2){
+                    @include container(284px, 145px, 0 auto, 0);
+                    font-family: 'Forum', sans-serif;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #0C0B10;
+                }
+
+                &:last-child{
+                    @include container(284px, 82px, 0 37px, 0);
+                    font-family: 'Manrope', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 179.8%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.main{
+
+    .statics{
+        margin-top: -960px;
+
+        &-container{
+            @include container(1249px, none, 0 auto, 0);
+
+            &_item{
+                @include container(539px, 197px, 0 auto, 0);
+
+                p{                    
+                    font-family: 'Manrope', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 179.8%;
+                }
+
+                .statics-container_title{
+                    font-family: 'Forum', sans-serif;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: #0C0B10;
+                }
+
+                &:last-child{
+                    @include container(1249px, 192px, 0 auto, 0);
+                }
+
+                .container-item_block{
+                    @include container(192px, 365px, 0 auto, 134px 0);
+                    background-image: url('../img/romb-dark.png');
+
+                    p{
+                        font-family: 'Forum', sans-serif;
+                        font-weight: 400;
+                        color: #0C0B10;
+
+                        &:first-child{
+                            font-size: 44px;
+                            line-height: 98.5%;
+                            text-align: center;
+                            letter-spacing: 0.04em;
+                            text-transform: uppercase;
+                        }
+
+                        &:last-child{
+                            font-size: 21px;
+                            line-height: 98.5%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .creating{
+        margin-top: 243px;
+
+        &-title{
+            @include container(677px, 251px, 0 auto, 0);
+            p{
+                &:first-child{
+                    font-family: 'Forum', sans-serif;
+                    font-weight: 400;
+                    font-size: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #0C0B10;
+                }
+                
+                &:last-child{
+                    @include container(350px, 99px, 15px auto 0, 0);
+                    font-family: 'Manrope', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 179.8%;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+        }
+
+        &-container{
+            @include container(656px, 640px, 0 auto, 0);
+
+            .txt{
+                @include container(540px, 133px, 52px auto 0, 0);
+
+                font-family: 'Forum';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 40px;
+                color: #0C0B10;
+            }
+
+            &_item{
+                @include container(277px, 100%, 0 auto, 42px 0 0);
+
+                p{
+                    font-family: 'Manrope', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 179.8%;
+                    color: #000000;
+                }
+
+                button{
+                    @include container(254px, 55px, 20px auto 0, 14px 0);
+
+                    background: #0C0B10;
+                    border-radius: 74px;
+
+                    font-family: 'Forum', sans-serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 26px;
+                    text-align: center;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+
+                    &:hover{
+                        border: 2px #FFFFFF solid;
+                        transition: 0.4s;
+                        background-color: #0C0B10;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+
+        .slider-bg{
+            background-image: url('../img/beache-img.png');
+            z-index: -1;
+            @include container(100%, 900px, -450px auto 0, 711px 0 0);
+            .wrapper-slider{
+                height: 100%;
+    
+                .slider-whywe{
+                    min-width: 0;
+                    margin: 0 0 0 120px;
+                    position: relative;
+    
+                }
+    
+                .slick-list{
+                    overflow: hidden;
+                }
+                .slick-track{
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.footer-why{
+
+    &_btn{
+        @include container(540px, 55px, -221px auto 200px, 0);
+        background-color: #0C0B10;
+        border-radius: 74px;
+        display: block;
+
+        font-family: 'Forum', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover{
+            background-color: #0C0B10;
+            color: #FFFFFF;
+            border: 3px solid #FFFFFF;
+            transition: 0.4s;
+        }
+
+        &:active{
+            background-color: #0C0B10 !important;
+            color: #FFFFFF !important;
+        }
+    }
+}
