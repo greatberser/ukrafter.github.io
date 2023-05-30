@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  @font-face {
+    font-family: 'Monserrat';
+    src: url('../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf');
+  }
+
   html{
     max-width: 1440px;
     margin: 0 auto;
